@@ -6,4 +6,5 @@ WORKDIR /tmp/
 RUN pip install -qr requirements.txt
 ADD app.py /opt/webapp/
 WORKDIR /opt/webapp/
+EXPOSE 5000
 CMD [ "python", "./app.py"]
